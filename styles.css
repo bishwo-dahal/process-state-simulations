@@ -59,7 +59,10 @@
 }
 
 .button-container {
-
+    /* these rules keep buttons always on bottom left because it was changing the page height on each animation */
+    position: fixed;
+    left:10px;
+    bottom:10px;
  }
 
 
