@@ -1,0 +1,136 @@
+<html>
+<head>
+
+<!--
+=======================================================================
+File:           OSProcessorStates/index.html
+
+Authors:        Sanjeeb Sangruala and Paul D. Wiedemeier, Ph.D.
+
+Organization:   The University of Louisiana at Monroe
+                700 University Avenue
+                College of Business Administration and Social Sciences
+                Computer Science and CIS Programs
+
+Email:          wiedemeier@ulm.edu
+
+Phone:          318-342-1856
+
+Date Written:   Spring Semester 2019
+
+Revision Date:  August 21, 2019
+
+License:        This work is licensed under a Creative Commons Attribution-ShareA
+like 3.0 Unported License.
+
+=======================================================================
+-->
+
+    <title>
+        Animation
+    </title>
+
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link type="text/css" rel="stylesheet" href="modal-styles.css" />
+
+</head>
+
+<body>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<div class="modal-header">
+			
+		  <span class="close">&times;</span>
+		  <h1 id="m-header">Modal Header</h2>
+		</div>
+		<div class="modal-body">
+		  <h2 id="m-body">Some text in the Modal Body</p>
+		</div>
+		<div class="modal-footer">
+		  <h3 id="m-footer">Modal Footer</h3>
+		</div>
+	  </div>
+
+	</div>
+	
+<div class="header" style="text-align: center; font-size:28pt; font-weight:bold">
+Process State Simulations
+</div>
+
+<div class="header" style="text-align: center; font-size:24pt">
+Written 2018-2019 by Sanjeeb Sangraula and Dr. Paul D. Wiedemeier
+</div>
+
+<div class="header" style="text-align: center; font-size:20pt">
+University of Louisiana at Monroe
+</div>
+
+<div class="header" style="text-align: center; font-size:16pt">
+This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.<br />
+<a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><button>View License</button></a>
+</div>
+
+    <div class="root-container">
+
+        <h1 id="state-name"></h1>
+		
+		<div class="container">
+
+			<div class="state-container">
+			
+				<div id="animation-state" class="state">
+		
+					Process.....
+		
+				</div>
+
+				<div id="ready-state" class="state">
+		
+					Ready
+		
+				</div>
+		
+				<div id="running-state" class="state">
+		
+					Running
+		
+				</div>
+			
+				<div id="blocked-state" class="state">
+		
+					Blocked
+		
+				</div>
+				
+			</div>			
+		
+
+			<div id="button-container" class="button-container">
+				
+				<button class="button" id="button1" onclick="buttonClick()">Create Process</button>
+
+				<button class="info-button" onclick="showInfo()" id="info-1">Show info</button>
+				
+				<button class="button" id="button2" onclick="button2Click()">Process Requested Resources</button>
+
+				<button class="info-button" onclick="showInfo2()" id="info-2">Show info</button>
+				
+				<button class="button" id="button3" onclick="button3Click()">Timeslice Occurs</button>
+
+				<button class="info-button" onclick="showInfo3()" id="info-3">Show info</button>
+			</div>
+			
+		</div>
+
+    </div>
+
+    <script src="script.js"></script>
+	<script src="modal-script.js"></script>
+</body>
+
+
+</html>

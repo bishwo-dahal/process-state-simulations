@@ -1,0 +1,84 @@
+.state {
+	position: absolute;
+	height: 48px;
+	width: 160px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    color: white;
+    font-size: 32px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 24px;1
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#animation-state {
+	background-color: #B0BEC5;
+	color: black;
+	border-color: #6A1B9A;
+	display: none;
+}
+
+#blocked-state {
+	left: 200px;
+	left: 200px;
+	top: 300px;
+}
+
+#running-state {
+	top: 0px;
+	left: 400px;
+}
+
+#ready-state {
+	left: 0px;
+	top: 0px;
+}
+
+.state-container {
+    width: 640px;
+	margin-top: 48px;
+	position: relative;
+	height: 450px;
+    margin: auto;
+}
+
+.root-container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+	position: relative;
+	left: 0px;
+}
+
+.button-container {
+
+ }
+
+
+#state-name {
+    background-color: #00838f;
+    color: white;
+    padding: 16px;
+    margin-bottom: 2%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+    background-color: #1b5e20;
+    color: white;
+    padding: 8px;
+    margin-top: 16px;
+	display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.info-button {
+	margin-left: 2px;
+}
