@@ -100,6 +100,8 @@ function startProcess() {
 }
 
 function processExecuted() {
+  // hide buttons and then show the animation so that user can't forcly push buttons
+  hideRunningButtons();
   animate(
     RUNNING_LEFT_POS,
     RUNNING_TOP_POS,
