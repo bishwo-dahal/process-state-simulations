@@ -3,9 +3,9 @@ const RUNNING_STATE = "Running";
 const BLOCKED_STATE = "Blocked";
 const NOT_STARTED = "Process Not Yet Started";
 
-const START_TOP_POS = -20;
+const START_TOP_POS = 0;
 const START_LEFT_POS = -300;
-const END_TOP_POS = -20;
+const END_TOP_POS = 0;
 const END_LEFT_POS = 750;
 const READY_TOP_POS = 0;
 const READY_LEFT_POS = 0;
@@ -213,7 +213,7 @@ function animate(beginLeftPos, beginTopPos, endLeftPos, endTopPos, callback) {
   var end1 = false;
   var end2 = false;
 
-  var id = setInterval(frame, 3);
+  var id = setInterval(frame, 1);
 
   function frame() {
     if (!end1 && beginTopPos < endTopPos) {
