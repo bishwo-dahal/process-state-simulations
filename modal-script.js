@@ -1,7 +1,7 @@
-var modal = document.getElementById("myModal");
-var body = document.getElementById("m-body");
-var header = document.getElementById("m-header");
-var footer = document.getElementById("m-footer");
+let modal = document.getElementById("myModal");
+let body = document.getElementById("m-body");
+let header = document.getElementById("m-header");
+let footer = document.getElementById("m-footer");
 let modalClose = document.getElementById("close-modal");
 
 function showModal(h, b, f) {
@@ -30,16 +30,16 @@ window.onclick = function (event) {
 document.onload = initialize();
 
 function initialize() {
-  var info1 = document.getElementById("info-1");
-  var info2 = document.getElementById("info-2");
-  var info3 = document.getElementById("info-3");
+  let info1 = document.getElementById("info-1");
+  let info2 = document.getElementById("info-2");
+  let info3 = document.getElementById("info-3");
 
   info2.style.display = "none";
   info3.style.display = "none";
 }
 
 function showInfo() {
-  var state = document.getElementById("button1").innerHTML;
+  let state = document.getElementById("button1").innerHTML;
 
   switch (state) {
     case "Create Process":

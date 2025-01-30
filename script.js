@@ -32,7 +32,7 @@ const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 const button3 = document.getElementById("button3");
 
-var current_state = NOT_STARTED;
+let current_state = NOT_STARTED;
 
 displayNotStarted();
 
@@ -75,8 +75,8 @@ function showRunningButtons() {
 }
 
 function startProcess() {
-  var display = setInterval(frame, 40);
-  var opacity = 0.5;
+  let display = setInterval(frame, 40);
+  let opacity = 0.5;
   animationState.innerHTML = "Process is Starting.";
   animationState.style.left = START_LEFT_POS;
   animationState.style.top = START_TOP_POS;
@@ -112,8 +112,8 @@ function processExecuted() {
 }
 
 function processExecutedCallback() {
-  var display = setInterval(frame, 40);
-  var opacity = 1;
+  let display = setInterval(frame, 40);
+  let opacity = 1;
   animationState.style.display = "block";
   animationState.innerHTML = "Process Ending";
   animationState.style.opacity = opacity;
@@ -205,15 +205,15 @@ function animate(beginLeftPos, beginTopPos, endLeftPos, endTopPos, callback) {
   runningState.style.backgroundColor = STATE_CHANGING_COLOR;
   blockedState.style.backgroundColor = STATE_CHANGING_COLOR;
 
-  var elem = animationState;
+  let elem = animationState;
   elem.style.display = "block";
   elem.style.left = beginLeftPos + "px";
   elem.style.top = beginTopPos + "px";
 
-  var end1 = false;
-  var end2 = false;
+  let end1 = false;
+  let end2 = false;
 
-  var id = setInterval(frame, 1);
+  let id = setInterval(frame, 1);
 
   function frame() {
     if (!end1 && beginTopPos < endTopPos) {
