@@ -2,7 +2,7 @@ var modal = document.getElementById("myModal");
 var body = document.getElementById("m-body");
 var header = document.getElementById("m-header");
 var footer = document.getElementById("m-footer");
-var close = document.getElementsByClassName("close")[0];
+let modalClose = document.getElementById("close-modal");
 
 function showModal(h, b, f) {
   body.innerHTML = b;
@@ -16,7 +16,7 @@ function hideModal() {
 }
 
 // When the user clicks on <span> (x), close the modal
-close.onclick = function () {
+modalClose.onclick = function () {
   hideModal();
 };
 
